@@ -1,0 +1,5 @@
+# start up
+bundle install --path=vendor/bundle
+vagrant up
+itamae ssh -h 192.168.33.10 -u vagrant -j nodes/node.json recipe/ruby_build.rb
+
